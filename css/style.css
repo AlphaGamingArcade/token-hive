@@ -100,30 +100,28 @@ button {
   height: 48px;
 }
 
-.feed .create-post .create-post-header {
+.feed .board .board-tab-header ul {
+  list-style: none;
   display: flex;
-  align-items: center;
-  margin-bottom: 16px;
+  gap: 2px;
 }
-.feed .create-post .create-post-header input {
-  flex: 1;
-  margin-left: 12px;
-  border: none;
-  font-size: 1.1rem;
-  outline: none;
+.feed .board .board-tab-header ul li.active button {
+  background-color: #1f2937;
+  color: white;
 }
-.feed .create-post .create-post-header input::-moz-placeholder {
-  color: #657786;
+.feed .board .board-tab-header ul li button {
+  background-color: #e5d5ff;
+  color: #7c3aed;
+  font-size: 14px;
+  padding: 12px;
+  border-radius: 5px 5px 0px 0px;
 }
-.feed .create-post .create-post-header input::placeholder {
-  color: #657786;
+.feed .board .board-tab-content ul {
+  list-style: none;
+  display: inline-block;
 }
-.feed .create-post .create-post-actions {
+.feed .board .board-tab-content ul li {
   display: flex;
-  justify-content: flex-end;
-}
-.feed .posts {
-  margin-top: 20px;
 }
 
 .post .post-header {

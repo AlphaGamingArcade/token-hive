@@ -53,33 +53,39 @@
 }
 // Feed
 .feed {
-  .create-post {
-    .create-post-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 16px;
+  .board {
+    .board-tab-header {
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 2px;
 
-      input {
-        flex: 1;
-        margin-left: 12px;
-        border: none;
-        font-size: 1.1rem;
-        outline: none;
+        li {
+          &.active button {
+            background-color: $neutral-dark;
+            color: #ffff;
+          }
 
-        &::placeholder {
-          color: $gray-text;
+          button {
+            background-color: $accent-violet;
+            color: $primary-color;
+            font-size: 14px;
+            padding: 12px;
+            border-radius: 5px 5px 0px 0px;
+          }
         }
       }
     }
+    .board-tab-content {
+      ul {
+        list-style: none;
+        display: inline-block;
 
-    .create-post-actions {
-      display: flex;
-      justify-content: flex-end;
+        li {
+          display: flex;
+        }
+      }
     }
-  }
-
-  .posts {
-    margin-top: 20px;
   }
 }
 
