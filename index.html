@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="content-right">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="/img/logo/token_hive_logo.png" />
+                </a>
+              </div>
+
+              <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search" />
+                <button>Search</button>
+              </div>
+            </div>
+
+            <div class="content-left">
+              <div class="theme-switcher">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="checkbox-label">
+                  <i class="fas fa-sun"></i>
+                  <i class="fas fa-moon"></i>
+                  <span class="ball"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="main-nav" id="mainNav">
+          <div class="container">
+            <ul>
+              <li class="active">
+                <a href="#">
+                  <span>Dashboard</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Coin Board</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Futures/Margin</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Community</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>P2E Games</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>Gallery</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <span>Exchange/Chart</span>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <button class="mobile-menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="container">
+          <div class="content-grid">
+            <!-- Feed -->
+            <div class="feed">
+              <div class="create-post card">
+                <div class="create-post-header">
+                  <img
+                    src="https://via.placeholder.com/40"
+                    alt="Your avatar"
+                    class="avatar"
+                  />
+                  <input type="text" placeholder="What's happening?" />
+                </div>
+                <div class="create-post-actions">
+                  <button class="btn btn-primary">Post</button>
+                </div>
+              </div>
+
+              <div class="posts">
+                <!-- Post 1 -->
+                <div class="post card">
+                  <div class="post-header">
+                    <div class="post-user">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="John Doe"
+                        class="avatar"
+                      />
+                      <div class="post-user-info">
+                        <h4>John Doe</h4>
+                        <span>@johndoe · 2h ago</span>
+                      </div>
+                    </div>
+                    <button class="post-more">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                  </div>
+
+                  <div class="post-content">
+                    <p>
+                      Just launched my new website! Check it out and let me know
+                      what you think. #webdev #design
+                    </p>
+                    <div class="post-image">
+                      <img
+                        src="https://via.placeholder.com/600x400"
+                        alt="Post image"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="post-actions">
+                    <button class="post-action">
+                      <i class="far fa-heart"></i>
+                      <span>42</span>
+                    </button>
+                    <button class="post-action">
+                      <i class="far fa-comment"></i>
+                      <span>12</span>
+                    </button>
+                    <button class="post-action">
+                      <i class="fas fa-share"></i>
+                      <span>5</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Post 2 -->
+                <div class="post card">
+                  <div class="post-header">
+                    <div class="post-user">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Jane Smith"
+                        class="avatar"
+                      />
+                      <div class="post-user-info">
+                        <h4>Jane Smith</h4>
+                        <span>@janesmith · 4h ago</span>
+                      </div>
+                    </div>
+                    <button class="post-more">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                  </div>
+
+                  <div class="post-content">
+                    <p>Beautiful day for a hike! 🏔️ #nature #outdoors</p>
+                    <div class="post-image">
+                      <img
+                        src="https://via.placeholder.com/600x400"
+                        alt="Post image"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="post-actions">
+                    <button class="post-action">
+                      <i class="far fa-heart"></i>
+                      <span>128</span>
+                    </button>
+                    <button class="post-action">
+                      <i class="far fa-comment"></i>
+                      <span>24</span>
+                    </button>
+                    <button class="post-action">
+                      <i class="fas fa-share"></i>
+                      <span>18</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Post 3 -->
+                <div class="post card">
+                  <div class="post-header">
+                    <div class="post-user">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Alex Johnson"
+                        class="avatar"
+                      />
+                      <div class="post-user-info">
+                        <h4>Alex Johnson</h4>
+                        <span>@alexj · 6h ago</span>
+                      </div>
+                    </div>
+                    <button class="post-more">
+                      <i class="fas fa-ellipsis-h"></i>
+                    </button>
+                  </div>
+
+                  <div class="post-content">
+                    <p>
+                      Working on a new project with HTML and SCSS. The developer
+                      experience is amazing! #webdev #scss #frontend
+                    </p>
+                  </div>
+
+                  <div class="post-actions">
+                    <button class="post-action">
+                      <i class="far fa-heart"></i>
+                      <span>85</span>
+                    </button>
+                    <button class="post-action">
+                      <i class="far fa-comment"></i>
+                      <span>32</span>
+                    </button>
+                    <button class="post-action">
+                      <i class="fas fa-share"></i>
+                      <span>14</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Sidebar -->
+            <aside class="right-sidebar desktop-only">
+              <div class="trending card">
+                <h3>What's happening</h3>
+                <ul>
+                  <li>
+                    <div class="trending-topic">
+                      <span class="topic-category">Technology</span>
+                      <h4>#TechNews</h4>
+                      <span class="topic-posts">12.5K posts</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="trending-topic">
+                      <span class="topic-category">Sports</span>
+                      <h4>#WorldCup</h4>
+                      <span class="topic-posts">45.2K posts</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="trending-topic">
+                      <span class="topic-category">Politics</span>
+                      <h4>#Election2024</h4>
+                      <span class="topic-posts">32.1K posts</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="trending-topic">
+                      <span class="topic-category">Entertainment</span>
+                      <h4>#MovieAwards</h4>
+                      <span class="topic-posts">18.7K posts</span>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="trending-topic">
+                      <span class="topic-category">Science</span>
+                      <h4>#SpaceX</h4>
+                      <span class="topic-posts">9.3K posts</span>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="show-more">Show more</a>
+              </div>
+
+              <div class="who-to-follow card">
+                <h3>Who to follow</h3>
+                <ul>
+                  <li>
+                    <div class="suggested-user">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Tech News"
+                        class="avatar"
+                      />
+                      <div class="user-info">
+                        <h4>Tech News</h4>
+                        <span>@technews</span>
+                      </div>
+                      <button class="btn btn-outline follow-btn">Follow</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="suggested-user">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Design Inspiration"
+                        class="avatar"
+                      />
+                      <div class="user-info">
+                        <h4>Design Inspiration</h4>
+                        <span>@designinspo</span>
+                      </div>
+                      <button class="btn btn-outline follow-btn">Follow</button>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="suggested-user">
+                      <img
+                        src="https://via.placeholder.com/40"
+                        alt="Web Dev Community"
+                        class="avatar"
+                      />
+                      <div class="user-info">
+                        <h4>Web Dev Community</h4>
+                        <span>@webdevcommunity</span>
+                      </div>
+                      <button class="btn btn-outline follow-btn">Follow</button>
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="show-more">Show more</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-links">
+              <a href="#">About</a>
+              <a href="#">Help Center</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">Accessibility</a>
+              <a href="#">Ads Info</a>
+              <a href="#">Blog</a>
+              <a href="#">Status</a>
+              <a href="#">Careers</a>
+              <a href="#">Brand Resources</a>
+              <a href="#">Advertising</a>
+              <a href="#">Marketing</a>
+            </div>
+            <p class="copyright">© 2023 SocialApp, Inc.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

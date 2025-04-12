@@ -1,0 +1,28 @@
+// PRIMARY COLORS
+$primary-color: #7c3aed; // Purple (Primary)
+$secondary-color: #14171a; // Might be deprecated in favor of new neutrals
+
+// ACCENT COLORS
+$accent-orange: #f59e0b;
+$accent-green: #22c55e;
+$accent-pink: #db2777;
+
+// NEUTRAL COLORS
+$neutral-dark: #1f2937;
+$neutral-light: #f8f8ff;
+
+// TEXT AND BACKGROUND
+$text-color: $neutral-dark;
+$background-color: #f7f9fa;
+$gray-text: #657786;
+
+// UI COLORS
+$border-color: #e1e8ed;
+$hover-color: #f5f8fa;
+
+// LAYOUT SIZES
+$max-width: 1280px;
+$header-height: 188px;
+$footer-height: 60px;
+$sidebar-width: 250px;
+$right-sidebar-width: 320px;

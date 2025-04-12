@@ -1,0 +1,96 @@
+// Reset and base styles
+
+// Layout
+
+// Components
+
+// Header
+
+// Sidebar
+
+// Post
+
+// Right sidebar
+.right-sidebar {
+  position: sticky;
+  top: calc(#{$header-height} + 20px);
+  height: calc(100vh - #{$header-height} - 40px);
+  overflow-y: auto;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+
+  .trending,
+  .who-to-follow {
+    ul {
+      list-style: none;
+
+      li {
+        padding: 12px 0;
+        border-bottom: 1px solid $border-color;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    .show-more {
+      display: block;
+      color: $primary-color;
+      margin-top: 12px;
+      font-size: 0.9rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .trending {
+    .trending-topic {
+      .topic-category,
+      .topic-posts {
+        font-size: 0.8rem;
+        color: $gray-text;
+      }
+
+      h4 {
+        font-weight: 700;
+        margin: 4px 0;
+      }
+    }
+  }
+
+  .who-to-follow {
+    margin-top: 20px;
+
+    .suggested-user {
+      display: flex;
+      align-items: center;
+
+      .user-info {
+        flex: 1;
+        margin-left: 12px;
+
+        h4 {
+          font-weight: 700;
+          margin-bottom: 2px;
+        }
+
+        span {
+          font-size: 0.9rem;
+          color: $gray-text;
+        }
+      }
+
+      .follow-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
